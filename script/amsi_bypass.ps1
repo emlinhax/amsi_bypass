@@ -3,7 +3,7 @@ amsi bypass by emlin
 
 this overwrites the address of a sub-function call to return instantly (0xC3 gadget)
 what makes this special is the fact that it does not do any .text patches and instead
-relies only on a single .data patch (8 bytes) which means it will bypass
+relies only on a single .rdata patch (8 bytes) which means it will bypass
 any integrity checks on the executable sections of amsi.dll
 #>
 
