@@ -6,3 +6,4 @@ this script overwrites the pointer to "CAmsiAntimalware::Scan" inside the amsi c
 to keep it simple: it's basically vtable pointer swapping\
 
 ![sub-call](1.png)
+![gadget](2.png)
