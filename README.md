@@ -1,8 +1,8 @@
 # amsi_bypass
 currently undetected by windows defender
 
-how does it work?
+a bypass that does not patch any executable sections since that is very easy to detect.\
+this script overwrites the pointer to "CAmsiAntimalware::Scan" inside the amsi context (.data)\
+to keep it simple: it's basically vtable pointer swapping\
 
-my goal was to make a bypass that does not patch any executable sections since that is very easy to detect.
-this script overwrites the pointer to "CAmsiAntimalware::Scan" inside the amsi context (.data)
-to keep it simple: it's basically vtable pointer swapping
+![sub-call](1.png)
